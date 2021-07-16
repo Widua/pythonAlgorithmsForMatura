@@ -1,3 +1,5 @@
+# First algorith changes Number representation system.
+
 def changeNumberRepresentationSystem(representation, number):
     if int(number > 0):
         changeNumberRepresentationSystem(representation, int(number / representation))
