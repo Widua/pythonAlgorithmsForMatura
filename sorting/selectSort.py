@@ -11,13 +11,6 @@ def selectionSort( numbers ):
     return numbers
 
 
-
-
-
-
-
-
-
 array = [55, 1, 99, 123, 9, 2137, 44, 555, 23, 2, 3, 6]
 
 sortedArray = selectionSort( array )
