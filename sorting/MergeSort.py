@@ -29,7 +29,6 @@ def mergeSort ( numbers ):
             m+=1
 
         # If arrays are not eqal, this lines put missing numbers in array
-
         while i < leftSize :
             numbers[m] = leftArray[i]
             i+=1
