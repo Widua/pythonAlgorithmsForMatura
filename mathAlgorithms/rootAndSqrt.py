@@ -12,7 +12,21 @@ def sqrt(number):
         y+=1
     return y
 
+def sqrtWithDecimals( number ):
+    precision = 0.00000000001
+    a = 1
+    b = number
+
+    while abs( a - b ) >= precision:
+        a = (a+b)/2
+        b = number/a
+    return a
+
 number = root(3,3)
-number2 = sqrt(25)
 print(number)
+
+number2 = sqrt(25)
 print(number2)
+
+number3 = sqrtWithDecimals( 111 )
+print(number3)
