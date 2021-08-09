@@ -1,8 +1,19 @@
-def root( number, power ):
+def pow( number, power ):
     org = number
     for i in range(1,power):
         number = number * org
     return number
+
+def fastPow( number , power ):
+    finalNumber = 1
+
+    while power> 0:
+
+        if power %2 == 1:
+            finalNumber *= number
+        number *= number
+        power = int(power /2)
+    return finalNumber
 
 def sqrt(number):
     x = number
@@ -22,7 +33,7 @@ def sqrtWithDecimals( number ):
         b = number/a
     return a
 
-number = root(3,3)
+number = pow(3,3)
 print(number)
 
 number2 = sqrt(25)
@@ -30,3 +41,6 @@ print(number2)
 
 number3 = sqrtWithDecimals( 111 )
 print(number3)
+
+number4 = fastPow(3,3)
+print(number4)
