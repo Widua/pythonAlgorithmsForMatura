@@ -5,9 +5,9 @@ def selectionSort( numbers ):
 
         for a in range( i+1 , len(numbers) ):
             if numbers[i] > numbers[a]:
-                helpVar = numbers[i]
-                numbers[i] = numbers[a]
-                numbers[a] = helpVar
+
+                numbers[i], numbers[a] = numbers[a], numbers[i]
+
     return numbers
 
 

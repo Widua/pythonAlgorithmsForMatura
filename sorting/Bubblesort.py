@@ -4,9 +4,9 @@ def bubbleSort ( numbers ):
     for i in range(0,len(numbers)):
         for a in range(1,len(numbers)-i):
             if numbers[a - 1] > numbers[a]:
-                help = numbers[a]
-                numbers[a] = numbers[a-1]
-                numbers[a-1] = help
+
+                numbers[a-1],numbers[a] = numbers[a] , numbers[a-1]
+
     return numbers
 
 
