@@ -8,7 +8,7 @@ def isPhoneNumber( potentialNumber ):
 
     phoneRegex = r"([\+]?[0-9]{2})?[/ ]?([0-9][/ ]?){9}"
 
-    if re.search( phoneRegex , potentialNumber ):
+    if re.match( phoneRegex , potentialNumber ):
         return True
     else:
         return False
@@ -16,7 +16,7 @@ def isPhoneNumber( potentialNumber ):
 def isEmailAddress (potentialEmail):
     emailRegex = r"([\.]?[/-]?[\w]?)+[@][\w]*[.]+[\w]{2,4}"
 
-    if re.search( emailRegex , potentialEmail ):
+    if re.match( emailRegex , potentialEmail ):
         return True
     else:
         return False
@@ -27,3 +27,4 @@ print(isPhoneNumber("+44333222111"))
 print(isPhoneNumber("+44 333222111"))
 print(isPhoneNumber("333 222 111"))
 print(isEmailAddress("mikolaj.widla@gmail.com"))
+print(isEmailAddress("qq@@.com"))
