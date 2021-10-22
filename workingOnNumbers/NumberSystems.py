@@ -19,4 +19,4 @@ def changeNumberRepresentationSystem(representation, number):
         else:
             print(number % representation, end="")
 
-changeNumberRepresentationSystem(9, 5555)
+changeNumberRepresentationSystem(16, 201)
